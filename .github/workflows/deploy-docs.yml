@@ -37,7 +37,7 @@ jobs:
 
       - name: 构建文档
         env:
-          NODE_OPTIONS: ${{ secrets.VUE3STUDY }}
+          NODE_OPTIONS: ${{ secrets.NODE_OPTIONS }}
         run: |-
           pnpm run docs:build
           > .vuepress/dist/.nojekyll
