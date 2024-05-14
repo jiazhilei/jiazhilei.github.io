@@ -1,4 +1,5 @@
 import { defineUserConfig } from "vuepress";
+import { shikiPlugin } from "@vuepress/plugin-shiki";
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -9,6 +10,15 @@ export default defineUserConfig({
   description: "vuepress-theme-hope 的博客演示",
 
   theme,
+  plugins: [
+    shikiPlugin({
+      // 你的选项
+      themes: {
+        light: "github-light",
+        dark: "one-dark-pro",
+      },
+    }),
+  ],
 
   // 和 PWA 一起启用
   // shouldPrefetch: false,
