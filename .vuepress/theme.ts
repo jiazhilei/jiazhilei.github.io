@@ -95,7 +95,10 @@ export default hopeTheme({
 
   // 在这里配置主题提供的插件
   plugins: {
-    blog: true,
+    blog: {
+      // 摘要
+      excerpt: false,
+    },
     prismjs: false,
     copyCode: true, // 复制
     // photoSwipe: false, // 图片预览
