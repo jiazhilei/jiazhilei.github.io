@@ -8,7 +8,7 @@ const theme: Theme = defaultTheme({
   colorMode: "auto",
   colorModeSwitch: true,
   home: "/",
-  logo: "https://cdn.jsdelivr.net/gh/jiazhilei/picx-images-hosting@master/logo.7awzkimr2l.webp",
+  logo: "https://raw.githubusercontent.com/jiazhilei/picx-images-hosting/gh-pages/logo.7zq94jtcuj.webp",
   // logoAlt:'', // 指定 Logo 图片的替代文字。
   // logoDark:'', // 在夜间模式中使用的 Logo 图片的 URL。
   // repo: "",// 项目仓库的 URL。
