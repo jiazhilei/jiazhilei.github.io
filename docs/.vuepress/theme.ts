@@ -1,6 +1,7 @@
 import { Theme } from "vuepress";
 import { defaultTheme } from "@vuepress/theme-default";
 import navbar from "./navbar";
+import sidebar from "./sidebar";
 
 const theme: Theme = defaultTheme({
   hostname: "jiazhilei.github.io",
@@ -8,12 +9,12 @@ const theme: Theme = defaultTheme({
   colorMode: "auto",
   colorModeSwitch: true,
   home: "/",
-  logo: "https://raw.githubusercontent.com/jiazhilei/picx-images-hosting/gh-pages/logo.7zq94jtcuj.webp",
+  logo: "https://jiazhilei.github.io/picx-images-hosting/logo.7zq94jtcuj.webp",
   // logoAlt:'', // 指定 Logo 图片的替代文字。
   // logoDark:'', // 在夜间模式中使用的 Logo 图片的 URL。
   // repo: "",// 项目仓库的 URL。
   navbar,
-  sidebar: "auto", // false | 'auto' | SidebarConfigArray | SidebarConfigObject
+  sidebar, // false | 'auto' | SidebarConfigArray | SidebarConfigObject
   sidebarDepth: 3, // 设置根据页面标题自动生成的侧边栏的最大深度。
   editLink: true, // 是否启用 编辑此页 链接。
   lastUpdatedText: "上次更新",

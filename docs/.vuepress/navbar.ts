@@ -1,6 +1,19 @@
 import { NavbarConfig } from "@vuepress/theme-default";
 const navbar: NavbarConfig = [
   {
+    text: "前端",
+    children: [
+      {
+        text: "JavaScript",
+        link: "/web/javascript/",
+      },
+      {
+        text: "React",
+        link: "/web/react/",
+      },
+    ],
+  },
+  {
     text: "导航",
     link: "/guide/",
     children: [

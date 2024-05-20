@@ -3,7 +3,7 @@ home: true
 title: 首页
 heroText: 个人文档
 tagline: 我的个人文档
-heroImage: https://raw.githubusercontent.com/jiazhilei/picx-images-hosting/gh-pages/logo.7zq94jtcuj.webp
+heroImage: https://jiazhilei.github.io/picx-images-hosting/logo.7zq94jtcuj.webp
 actions:
   - text: 快速上手
     link: https://v2.vuepress.vuejs.org/zh/guide/getting-started.html
