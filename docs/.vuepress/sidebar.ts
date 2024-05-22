@@ -5,16 +5,16 @@ const sidebar: SidebarConfig = {
     {
       text: "JavaScript",
       link: "/web/javascript/",
-      children: ["/web/javascript/es6"],
+      children: ["/web/javascript/es6.md"],
     },
   ],
 
   "/web/react/": [
-    // {
-    //   text: "React",
-    //   link: "/web/react/",
-    //   children: [],
-    // },
+    {
+      text: "React",
+      link: "/web/react/",
+      children: ["/web/react/hooks.md"],
+    },
   ],
 };
 
