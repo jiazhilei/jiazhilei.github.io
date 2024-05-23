@@ -1,4 +1,5 @@
 import { viteBundler } from "@vuepress/bundler-vite";
+import { searchPlugin } from "@vuepress/plugin-search";
 import { defineUserConfig } from "vuepress";
 import theme from "./theme";
 
@@ -17,6 +18,21 @@ export default defineUserConfig({
   //   },
   theme,
   bundler: viteBundler(),
+  plugins: [
+    searchPlugin({
+      // 配置项
+      locales: {
+        "/": {
+          placeholder: "搜索",
+        },
+      },
+      // 排除首页
+      isSearchable: (page) => page.path !== "/",
+      // 允许搜索 Frontmatter 中的 `tags`
+      getExtraFields: (page) =>
+        ((page.frontmatter.tags || page.content || page.data) as []) ?? [],
+    }),
+  ],
 
   //   permalinkPattern: "",
 });

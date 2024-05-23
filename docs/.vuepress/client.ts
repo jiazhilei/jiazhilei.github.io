@@ -6,7 +6,7 @@ export default defineClientConfig({
     console.log({ app, router, siteData });
   },
   layouts: {
-    NotFound,
+    // NotFound,
   },
   setup() {},
   rootComponents: [],
