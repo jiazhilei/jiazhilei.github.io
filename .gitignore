@@ -1,10 +1,9 @@
-# VuePress files
-docs/.vuepress/.temp/
-docs/.vuepress/.cache/
-docs/.vuepress/dist/
+dist
+cache
+.temp
 
 # Node modules
-node_modules/
+node_modules
 
 # MacOS Desktop Services Store
 .DS_Store
