@@ -1,28 +1,51 @@
 ---
-home: true
-title: 首页
-heroText: 个人文档
-tagline: 我的个人文档
-heroImage: https://jiazhilei.github.io/picx-images-hosting/logo.7zq94jtcuj.webp
-actions:
-  - text: 快速上手
-    link: https://v2.vuepress.vuejs.org/zh/guide/getting-started.html
-    type: primary
-  - text: 默认主题
-    link: https://ecosystem.vuejs.press/zh/themes/default
-    type: secondary
+layout: home
+hero:
+  name: VitePress
+  text: 由 Vite 和 Vue 驱动的静态站点生成器
+  tagline: 将 Markdown 变成优雅的文档，只需几分钟
+  image:
+    src: /images/vitepress-logo-large.webp
+    alt: VitePress
+  actions:
+    - theme: brand
+      text: 官方文档
+      link: https://vitepress.dev/zh/
+    - theme: alt
+      text: 官方github
+      link: https://github.com/vuejs/vitepress# https://vitepress.dev/reference/default-theme-home-page
 features:
-  - title: 简洁至上
-    details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-  - title: Vue 驱动
-    details: 享受 Vue 的开发体验，可以在 Markdown 中使用 Vue 组件，又可以使用 Vue 来开发自定义主题。
-  - title: 高性能
-    details: VuePress 会为每个页面预渲染生成静态的 HTML，同时，每个页面被加载的时候，将作为 SPA 运行。
-  - title: 主题
-    details: 提供了一个开箱即用的默认主题。你也可以挑选一个社区主题，或者创建一个你自己的主题。
-  - title: 插件
-    details: 灵活的插件API，使得插件可以为你的站点提供许多即插即用的功能。
-  - title: 打包工具
-    details: 推荐的打包工具是 Vite ，但也同样支持使用 Webpack 。选一个你喜欢的来使用吧！
-footer: MIT 协议 | 版权所有 © 2018-至今 VuePress 社区
+  - icon: 📝
+    title: 专注内容
+    details: 只需 Markdown 即可轻松创建美观的文档站点。
+  - icon: /svg/vite-home.svg
+    title: 享受 Vite 无可比拟的体验
+    details: 服务器即时启动，闪电般的热更新，还可以使用基于 Vite 生态的插件。
+  - icon: <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 256 220.8"><path fill="#41B883" d="M204.8 0H256L128 220.8 0 0h97.92L128 51.2 157.44 0h47.36Z"/><path fill="#41B883" d="m0 0 128 220.8L256 0h-51.2L128 132.48 50.56 0H0Z"/><path fill="#35495E" d="M50.56 0 128 133.12 204.8 0h-47.36L128 51.2 97.92 0H50.56Z"/></svg>
+    title: 使用 Vue 自定义
+    details: 直接在 Markdown 中使用 Vue 语法和组件，或者使用 Vue 组件构建自定义主题。
+  - icon: 🚀
+    title: 速度真的很快！
+    details: 采用静态 HTML 实现快速的页面初次加载，使用客户端路由实现快速的页面切换导航。
 ---
+<style>
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
+}
+</style>

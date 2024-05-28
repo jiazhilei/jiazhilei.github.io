@@ -1,22 +1,22 @@
-import { NavbarConfig } from "@vuepress/theme-default";
-const navbar: NavbarConfig = [
+import { DefaultTheme } from "vitepress";
+
+const nav: DefaultTheme.NavItem[] = [
   {
     text: "前端",
-    children: [
+    items: [
       {
         text: "JavaScript",
-        link: "/web/javascript/",
+        link: "/web/javascript/index.md",
       },
       {
         text: "React",
-        link: "/web/react/",
+        link: "/web/react/index.md",
       },
     ],
   },
   {
     text: "导航",
-    link: "/guide/",
-    children: [
+    items: [
       {
         text: "getting",
         link: "/guide/getting-started.md",
@@ -29,8 +29,7 @@ const navbar: NavbarConfig = [
   },
   {
     text: "工具",
-    link: "/utils/",
-    children: [
+    items: [
       {
         text: "Picx图床",
         link: "https://picx.xpoet.cn",
@@ -38,4 +37,5 @@ const navbar: NavbarConfig = [
     ],
   },
 ];
-export default navbar;
+
+export default nav;
