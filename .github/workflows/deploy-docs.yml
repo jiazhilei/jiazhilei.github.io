@@ -68,3 +68,9 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Push to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          # 部署文档
+          branch: gh-pages
+          folder: .vuepress/dist
