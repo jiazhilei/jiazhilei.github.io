@@ -6,8 +6,6 @@ export default defineConfig({
   title: "前端个人文档",
   description: "A VitePress Site",
   lang: "zh-CN",
-
-  srcDir: "./docs",
   head: [["link", { rel: "icon", href: "/images/vitepress-logo-mini.png" }]],
   // appearance:,
   lastUpdated: true,

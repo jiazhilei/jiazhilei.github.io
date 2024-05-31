@@ -15,7 +15,7 @@ const themeConfig: DefaultTheme.Config = {
   logo: "/images/vitepress-logo-large.webp",
   socialLinks: [{ icon: "github", link: "https://github.com/vuejs/vitepress" }],
   outline: {
-    level: [1, 3],
+    level: 3,
     label: "目录",
   },
   returnToTopLabel: "Return to top",
