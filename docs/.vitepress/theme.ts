@@ -12,7 +12,7 @@ const themeConfig: DefaultTheme.Config = {
     message: "Released under the MIT License.",
     copyright: "Copyright © 2019-present Evan You",
   },
-  logo: "/images/vitepress-logo-large.webp",
+  logo: "http://images.fe-jia.top/vitepress-logo-large.webp",
   socialLinks: [{ icon: "github", link: "https://github.com/vuejs/vitepress" }],
   outline: {
     level: 3,
